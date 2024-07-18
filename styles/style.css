@@ -1,8 +1,160 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
 
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+  }
+  body{
+    background: black;
+  }
+  .brand{
+    color: rgb(230, 83, 60);
+    font-size: 2.2rem;
+    font-weight: 800;
+
+  }
+  .display-flex{
+    display: flex;
+  }
+  .bg-color{
+    background:linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 199, 199, 0) 100%) 
+  }
+  .navbar{
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links{
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 5px;
+
+    
+  }
+  .nav-item{
+    list-style: none;
+    margin-right: 47px;
+    
+  }.nav-link{
+    text-decoration: none;
+    font-size: 1rem;
+     
+  }
+  #bold-text{
+    font-weight: 600;
+    border-radius: 46px;
+    padding: 5px 12px 5px 12px;
+    background: rgb(230, 83, 60);
+  }
+  .text-white{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+  }
+  
+  .text-white-lighter{
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .navbar, .banner{
+    width: 80%;
+    margin: 0 auto;
+
+  }
+  .banner{
+    align-items: center;
+    justify-content: space-between;
+  }
+  #shape-word{
+    font-family: 'Miama', sans-serif;
+    font-weight: 400;
+    font-size: 8rem;
+                                                
+  }
+  .banner-text h1{
+        font-size: 4.8rem;
+        color: rgb(255, 255, 255);
+        font-weight: 800;
+        line-height: 110%;
+        margin-top: 10px;
+        margin-bottom: 24px;
+  }
+  .banner-text p{
+     font-size: 0.8rem;
+     line-height: 100%;
+     margin-top: 5px;
+  }
+  .banner-btn{
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 16px 40px 16px 40px;
+    margin-top: 24px;
+    margin-right: 14px;
+    margin-left: 0;
+  }
+  .banner-image img{
+     width: 100%;
+     margin-right: 214px;  
+  }
+  .banner-box{
+    padding: 10px 13px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    background: rgba(48, 48, 48, 0.54);
+  }
+  #box1{
+    position: absolute;
+    width: 160px;
+    height: 95px;
+    left: 1020px;
+    top: 260px;
+  }
+  #box2{
+    position: absolute;
+    width: 200px;
+    height: 86px;
+    left: 664px;
+    top: 520px;
+    
+  }
+  #box1 p{
+    margin-top: 0;
+  }
+  .banner-box-text{
+    margin-top: 4px;
+    width: 70%;
+  }
+   .circle-container{
+    width: 30%;
+    align-self: center;
+   }
+  #banner-box-text1{
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  #banner-box-text2{
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  #banner-box-text3{
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .banner-box-content p{
+    margin-top: 0;
+  }
+  .banner-box-text p{
+    margin: 0;
+  }
+  .circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(230, 83, 60);
   }
