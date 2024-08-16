@@ -1,0 +1,119 @@
+@media  screen and (max-width: 576px) {
+        .nav-links{
+            display: none;
+            margin-top: 3.5rem;
+        }
+        .humburger{
+            display: block;
+        }
+        .banner{
+            flex-direction: column;
+            gap: 60px;
+        }
+        .brand{
+            margin-bottom: 50px;
+        }
+        .banner-text{
+            width: 100%;
+        }
+        .banner-text  h1{
+            font-size: 43px;
+        }
+        #shape-word{
+            font-size: 70px;
+        }
+        .banner-button{
+            display: inline;
+        }
+        .first-section-text{
+            width: 100%;
+        }
+        .first-section-image{
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .second-section-container{
+            flex-direction: column;
+            width: 450px;
+            gap: 5px;
+    
+        }
+        .second-section-btn{
+            width: 90%;
+            align-items: center;
+            margin-bottom: 31px;
+        }
+        .second-section-text{
+            padding: 0px;
+            width: 100%;
+            padding-left: 20px;
+        }
+        .second-section-image img{
+            width: 450px;
+            height: auto;
+            margin-bottom: 5px;
+        }
+        .fourth-section-text{
+            width: 90%;
+        }
+        .table-form-content{
+            flex-direction: column;
+        }
+        .table-content{
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .table-content table{
+            width: 420px;
+            height: 270px;
+        }
+        .form-content{
+            width: 100%;
+        }form > input, select{
+            width: 180px;
+        }
+        .btn-fourth{
+            width: 220px;
+        }
+        form .select-section1{
+            width: 47%;
+        }
+        form .select-section2{
+            width: 95%;
+        }
+        .fifth-section{
+            width: 90%;
+    
+        }
+         .fifth-section .fifth-section-text{
+            width: 100%;
+        }.fifth-section-image-container{
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 370px;
+        }
+        .text-container{
+            width: 450px;
+            height: 372px;
+        }
+        .sixth-section-image-container{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 350px 350px 350px 350px 350px 350px;
+        }
+        .sixth-section-image-content img{
+            width: 100%;
+        }
+        .footer-section-content{
+            flex-direction: column;
+
+        }
+        .footer-section-text1, .footer-section-text2, .footer-section-text3{
+            width: 100%;
+            margin-top: 40px;
+        }
+        .footer-section-text2{
+            margin-left: 0;
+        }
+        
+    
+}

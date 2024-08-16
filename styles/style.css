@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/miama');
-
+*{
+  margin: 0;
+  padding: 0;
+}
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -14,26 +17,32 @@
     color: rgb(230, 83, 60);
     font-size: 2.2rem;
     font-weight: 800;
+    margin-top: 2rem;
 
   }
   .display-flex{
     display: flex;
   }
   .bg-color{
-    background:linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 199, 199, 0) 100%) 
+    background-image: linear-gradient(to bottom, #151215, #1c1a1c, #242124, #2c282b, #343033, #332f32, #312e30, #302d2f, #262325, #1c1a1b, #111010, #000000);
+    
+  }.navbar, .banner{
+    width: 80%;
+    margin: 0 auto;
   }
   .navbar{
     justify-content: space-between;
     align-items: center;
-  }
+
+    }
   .nav-links{
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 39px;
     padding: 5px;
-
-    
+    margin-top: 2rem;
   }
+  
   .nav-item{
     list-style: none;
     margin-right: 47px;
@@ -49,6 +58,10 @@
     padding: 5px 12px 5px 12px;
     background: rgb(230, 83, 60);
   }
+  .humburger{
+    display: none;
+    margin-bottom: 18px;
+  }
   .text-white{
     color: rgb(255, 255, 255);
     font-weight: 400;
@@ -56,11 +69,6 @@
   
   .text-white-lighter{
     color: rgba(255, 255, 255, 0.5);
-  }
-  .navbar, .banner{
-    width: 80%;
-    margin: 0 auto;
-
   }
   .banner{
     align-items: center;
@@ -78,83 +86,440 @@
         font-weight: 800;
         line-height: 110%;
         margin-top: 10px;
-        margin-bottom: 24px;
   }
   .banner-text p{
      font-size: 0.8rem;
      line-height: 100%;
      margin-top: 5px;
   }
-  .banner-btn{
-    border-radius: 42px;
+  .btn{
     background: rgb(230, 83, 60);
+    border-radius: 42px;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 400;
     padding: 16px 40px 16px 40px;
     margin-top: 24px;
     margin-right: 14px;
     margin-left: 0;
+    border: none;
   }
-  .banner-image img{
-     width: 100%;
-     margin-right: 214px;  
+  .banner-button2{
+    background: #1c1a1c;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 16px 40px 16px 40px;
+    margin-top: 24px;
+    margin-right: 14px;
+    margin-left: 0;
+        
   }
-  .banner-box{
-    padding: 10px 13px;
-    box-sizing: border-box;
+  .card-1{
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    gap: 15px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
+    top: 425px;
+    left: -78px;
   }
-  #box1{
+  .card-2{
     position: absolute;
-    width: 160px;
-    height: 95px;
-    left: 1020px;
-    top: 260px;
+    width: 150px;
+    height: 70px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    top: 150px;
+    right: -38px;
+
   }
-  #box2{
-    position: absolute;
-    width: 200px;
-    height: 86px;
-    left: 664px;
-    top: 520px;
-    
-  }
-  #box1 p{
-    margin-top: 0;
-  }
-  .banner-box-text{
-    margin-top: 4px;
-    width: 70%;
-  }
-   .circle-container{
-    width: 30%;
-    align-self: center;
-   }
-  #banner-box-text1{
-    font-size: 1.5rem;
-    font-weight: 900;
-  }
-  #banner-box-text2{
-    font-size: 0.8rem;
-    font-weight: 400;
-    line-height: 30px;
-  }
-  #banner-box-text3{
-    font-size: 2rem;
-    font-weight: 900;
-  }
-  .banner-box-content p{
-    margin-top: 0;
-  }
-  .banner-box-text p{
-    margin: 0;
-  }
+
   .circle{
-    width: 40px;
-    height: 40px;
+    width: 25%;
+    height: 36px;
     border-radius: 50%;
     background: rgb(230, 83, 60);
+    margin-top: 15px;
+    margin-left: 8px;
   }
+  .card-text h4{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  .card-text p{
+    font-size: 12px;
+  }
+  .card-2 h4{
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding: 13px 0px 0px 10px;
+  }
+  .card-2 p{
+    font-size: 12px;
+    padding-left: 10px;
+  }
+  .banner-img{
+    width: 349px;
+    height: 100%;
+    position: relative;
+  }
+
+  .first-section{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  .first-section-text{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .first-section-text h1{
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+  }
+  .first-section-text p{
+    font-size:  0.8rem;
+    font-weight: 400;
+  }
+  .first-section-image{
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  .first-section-image img{
+    border-radius: 50%;
+  }
+  .first-section-image h4{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .first-section-image p{
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+.second-section-container{
+  display: flex;
+  gap: 120px;
+  width: 80%;
+  height: 100%;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 25px 25px 25px 30px;
+ }
+.second-section-text h1{
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  line-height: 47px;
+
+}
+.second-section-text{
+  font-weight: 900;
+  font-size: 48px;
+  color: rgb(255, 255, 255);
+  margin: 14px 0;
+
+}
+.second-section-text p{
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+  line-height: 20px;
+}
+.second-section-btn{
+  width: 220px;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 16px 40px 16px 40px;
+ border: none;
+ margin-top: 34px;
+}
+.second-section-image img{
+  width: 369px;
+  height: 300px;
+  border-radius: 20px;
+
+}
+
+.fourth-section{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.fourth-section-text{
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.fourth-section-text h1{
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  line-height: 47px;
+
+}
+.fourth-section-text p{
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 20px;
+}
+.fourth-section .table-form-container{
+  background-color:  rgb(34, 34, 34);
+  width: 100%;
+}
+.table-form-container .table-form-content{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 37px;
+  padding-bottom: 25px;
+}
+.table-content{
+  width: 40%;
+
+}
+.table-content h1{
+  margin-bottom: 29px;
+}
+.form-content{
+  width: 60%;
+}
+.table-content table{
+  border-collapse: collapse;
+  
+}
+.table-content table td{
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.table-content table th{
+  font-size: 1rem;
+  font-weight: 500;
+  
+}
+.table-content table{
+  height: 12rem;
+}
+.table-content table, td, th{
+  border: 1px solid gray;
+  padding: 5px 10px;
+  text-align: left;
+}
+.form-content p{
+  margin-top: 16px;
+  margin-bottom: 22px;
+  font-size: 0.8rem;
+  font-weight: 400;
+}input::placeholder{
+  color: rgba(255, 255, 255, 0.5);
+}
+form > input, select{
+  width: 43%;
+  height: 1.87rem;
+  background-color:  rgb(72, 68, 68);
+  border: none;
+  padding: 5px 18px;
+  border-radius: 7px;
+}form  .select-section1{
+  width: 48.9%;
+  height: 2.5rem;
+}
+form  .select-section2{
+  width: 98.5%;
+  height:2.5rem;
+  margin-top: 20px;
+}
+.btn-fourth{
+  margin-top: 20px;
+}
+.fifth-section{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.fifth-section .fifth-section-text{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.fifth-section-text h1{
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  line-height: 47px;
+  margin-bottom: 15px;
+
+}
+.fifth-section-text p{
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 35px
+}
+.fifth-section-image-container{
+  width: 90%;
+  margin:0 auto;
+  border-radius: 8px;
+  display: grid;
+  background: rgba(255, 255, 255, 0.1);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px 250px;
+  gap: 20px;
+  padding: 20px;
+}
+.text-container{
+  background-image: url('../images/trainer1.png');
+
+  border-radius: 8px;
+  background-size: cover;
+  position: relative;
+}
+#img-2{
+  background-image: url('../images/trainer2.png');
+}
+#img-3{
+  background-image: url('../images/trainer3.png');
+}
+#img-4{
+  background-image: url('../images/trainer4.png');
+  background-position: center;
+}
+#img-5{
+  background-image: url('../images/trainer5.png');
+}
+#img-6{
+  background-image: url('../images/trainer6.png');
+}
+.text-container .image-text-content h4{
+  position: absolute;
+  left: 10px;
+  bottom: 35px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.image-text-content p{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.sixth-section{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.sixth-section-text h1{
+    font-size: 2.5rem ;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.sixth-section-image-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px 250px;
+  gap: 50px;
+}
+.sixth-section-image-container img{
+  width: 100%;
+  height: 100%;
+  border-radius: 18px 0 18px 0;
+  
+}
+.sixth-section-image-container p{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.footer-section{
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 100px;
+}
+.footer-section-container{
+  width: 80%;
+  margin: 0 auto;
+}
+.footer-section-content{
+  padding: 40px 0;
+
+}
+.footer-section-text1 h1{
+  font-size: 3.2rem;
+  margin-bottom: 14px;
+  margin-top: 8px;
+}
+.footer-section-text1{
+  width: 40%;
+  
+}
+.footer-section-text1 p{
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.footer-section-text2{
+  color: rgba(255, 255, 255, 0.5);
+  width: 30%;
+  margin-left: 120px;
+
+}
+.footer-section-text3{
+  color: rgba(255, 255, 255, 0.5);
+  width: 30%;
+
+}.footer-section-text2 h2{
+   font-size: 1.5rem;
+   font-weight: 600;
+   margin-bottom: 26px;
+}
+.footer-section-text2 p{
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 19px;
+}
+.footer-section-text3 h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 26px;
+}
+.footer-section-text3 p{
+ font-size: 1rem;
+ font-weight: 400;
+ margin-bottom: 19px;
+}
+.footer-section-content-text2{
+  padding-bottom: 25px;
+}
+#horizontal-line{
+  width: 100%;
+  height: 1px;
+  background-color: rgb(87, 81, 81);
+}
+.footer-section-content-text2 p{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 25px;
+}

@@ -5,42 +5,231 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B10 Assignment2</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="inter-font">
     <header class="bg-color">
-        <nav class="navbar display-flex">
+            <nav class="navbar display-flex">
             <h1 class="brand"><i>Fitness</i></h1>
-        <ul class="nav-links display-flex">
+            <ul class="nav-links display-flex">
             <li class="nav-item"><a href="" class="nav-link text-white" id="bold-text">Home</a></li>
             <li class="nav-item"><a href="" class="nav-link text-white">Service</a></li>
             <li class="nav-item"><a href="" class="nav-link text-white">Contact</a></li>
             <li class="nav-item"><a href="" class="nav-link text-white">About</a></li>
+            
         </ul>
-        </nav>
-        <div class="banner display-flex">
+        <div class="humburger">
+            <img src="images/humburger.png" alt="">
+        </div>
+            </nav>
+            <div class="banner display-flex">
             <div class="banner-text">
                 <h1>Get body in<br><span id="shape-word">shape</span> & stay<br> healthy</h1>
-                <p class="text-white-lighter">A huge selection of health and fitness content, healthy recipes<br>and transformation stories to help you get healthy and stay fit!</p>
-                <button class="banner-btn text-white">Join Club Now!</button><button class="banner-btn text-white">Download App</button>
+                <p class="text-white-lighter">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get healthy and stay fit!</p>
+                <button class="btn text-white banner-button">Join Club Now!</button><button class=" text-white banner-button banner-button2">Download App</button>
             </div>
             <div class="banner-img">
-                <div class="image-container"></div>
-                <img src="images/Images 2.png" alt="">
+                <div class="image-container">
+                    <img src="images/Images 2.png" alt="">
                 </div>
-                <div class="banner-box" id="box1">
-                    <p><span class="text-white" id="banner-box-text3">500+</span><br><span class="text-white-lighter" id="banner-box-text2">Free Workout Videos</span></p>
-                </div>
-                <div class="banner-box display-flex" id="box2">
-                     <div class="circle-container">
-                        <div class="circle"></div></div>
-                    <div class="banner-box-text">
-                         <p><span class="text-white" id="banner-box-text1">350+</span><br><span class="text-white-lighter" id="banner-box-text2">Video tutorial</span></p>
+                <div class="card-1 display-flex">
+                    <div class="circle"></div>
+                    <div class="card-text">
+                        <h4 class="text-white">350+</h4>
+                        <p class="text-white-lighter">Video tutorial</p>
                     </div>
                 </div>
+                <div class="card-2">
+
+                    <h4 class="text-white">500+</h4>
+                    <p class="text-white-lighter">Free Workout Videos</p>
+                </div>
             </div>
+         </div>
+    
+    </header>
+    <main>
+        <section class="first-section">
+            <div class="first-section-text">
+                <h1 class="text-white">Change Your Habits</h1>
+                <p class="text-white-lighter">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>  
+            </div>
+            <div class="first-section-image display-flex">
+                <div><img src="images/image 3.png" alt="">
+                    <h4>Movement</h4>
+                <p>Choose the right kind of<br> movement, practice regularly</p>
+            </div>
+                <div><img src="images/image 2.png" alt="">
+                <h4>Time</h4><p>We should do exercise timely.<br>Be active person.</p></div>
+                <div><img src="images/image 4.png" alt=""><h4>Practice</h4><p>We should practice all the fitness <br>rules and exercise.</p></div>
+                <div><img src="images/image 5.png" alt=""><h4>Weight Loss</h4><p>We should do exercise to loose weight.</p></div>
+            </div>
+        </section>
+        <section class="second-section">
+            <div class="second-section-container display-flex">
+                <div class="second-section-text">
+                <h1 class="text-white">Run an Extra<br>Mile Easily</h1>
+                <p class="text-white-lighter">Running is simple, but there are a few key considerations for starting a new running <br>program. Running is also a good form of exercise.</p>
+                <button class=" second-section-btn text-white">Join Now</button>
+                </div>
+            <div class="second-section-image"><img src="images/run.jpg" alt=""></div>
+            </div>
+        </section>
+       
+        <section class="fourth-section">
+            <div class="fourth-section-text">
+                <h1 class="text-white">BMI Calculator</h1>
+                <p class="text-white-lighter">Free Body Mass Index calculator gives out the BMI value and categorizes BMI based on provided information from WHO and CDC for both adults and children.</p>
+            </div>
+            <div class="table-form-container">
+              <div class="table-form-content display-flex">
+                <div class="table-content">
+                    <h1 class="text-white">BMI Calculator Chart</h1>
+                    <table>
+                        <tr>
+                            <th class="text-white">BMI</th>
+                            <th class="text-white">Weight Status</th>
+                        </tr>
+                        <tr>
+                            <td class="text-white-lighter">Below 18.5</td>
+                            <td class="text-white-lighter">Underweight</td>
+                        </tr>
+                        <tr>
+                            <td class="text-white-lighter">18.5 - 24.9</td>
+                            <td class="text-white-lighter">healthy</td>
+                        </tr>
+                        <tr>
+                            <td class="text-white-lighter">25.0 - 29.9</td>
+                            <td class="text-white-lighter">Overweight</td>
+                        </tr>
+                        <tr>
+                            <td class="text-white-lighter">30.0 - and above</td>
+                            <td class="text-white-lighter">Obese</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="form-content">
+                    <h1 class="text-white">Calculate your BMI</h1>
+                    <p class="text-white-lighter">Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women. View the BMI tables or use the tool below to compute yours.</p>
+                    
+                          <div class="form-section">
+                            <form >
+                                <input type="text" placeholder="Height/cm" >
+                                <input type="text" placeholder="Weight/kg" >
+                                <br>
+                                <br>
+                                <input type="number" placeholder="Age" class="text-white-lighter">
+                                <select  class="select-section1 text-white-lighter" name="Sex" id="Sex" placeholder="Sex">
+                                    <option value="Sex">Sex</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                                <select class="select-section2 text-white-lighter" name="" id="">
+                                        <option value="Select an activity factor">Select an activity factor</option>
+                                        <option value="Morning">Morning</option>
+                                        <option value="Evening">Evening</option>
+                                </select>
+                                <button class="second-section-btn text-white btn-fourth" >Calculate</button>
+                            </form>
+                          
+                          </div>
+                        
+                    
+
+                </div>
+              </div>
+            </div>
+        </section>
+        <section class="fifth-section">
+            <div class="fifth-section-text">
+                <h1 class="text-white">Meet Our Team</h1>
+                <p class="text-white-lighter">Meet our team of supportive, knowledgeable and passionate Personal Trainers. Let us help you achieve your health and fitness.</p>
+            </div>
+            <div class="fifth-section-image-container">
+                <div class="text-container">
+                 <div class="image-text-content">
+                    <h4 class="text-white">Jerom Bell</h4>
+                    <p class="text-white-lighter">Trainer</p>
+                 </div>
+                </div>
+                <div class="text-container" id="img-2">
+                    <div class="image-text-content">
+                        <h4 class="text-white">Cameron William</h4>
+                        <p class="text-white-lighter">Trainer</p>
+                     </div> 
+                </div>
+                <div class="text-container" id="img-3">
+                    <div class="image-text-content">
+                        <h4 class="text-white">Darrell Steward</h4>
+                        <p class="text-white-lighter">Trainer</p>
+                     </div>
+                    </div>
+                <div class="text-container" id="img-4">
+                    <div class="image-text-content">
+                        <h4 class="text-white">Dianne Russell</h4>
+                        <p class="text-white-lighter">Trainer</p>
+                     </div>
+                    </div>
+                <div class="text-container" id="img-5">
+                    <div class="image-text-content">
+                        <h4 class="text-white">Cody Fisher</h4>
+                        <p class="text-white-lighter">Trainer</p>
+                     </div>   
+                </div>
+                <div class="text-container" id="img-6">
+                    <div class="image-text-content">
+                        <h4 class="text-white">Theressa Webb</h4>
+                        <p class="text-white-lighter">Trainer</p>
+                     </div>  
+                </div>
+            </div>
+        </section>
+        <section class="sixth-section">
+             <div class="sixth-section-text">
+            <h1 class="text-white">Some Fitness tips that<br>you should follow</h1>
+            </div>
+            <div class="sixth-section-image-container">
+                <div class="sixth-section-image-content"><img src="images/water.jpg" alt=""><p class="text-white-lighter">Wake up and drink water</p></div>
+                <div class="sixth-section-image-content"><img src="images/morning-workout.jpg" alt=""><p class="text-white-lighter">Workout in the morning</p></div>
+                <div class="sixth-section-image-content"><img src="images/workout-with-friend.jpg" alt=""><p class="text-white-lighter">Find a fit friend</p></div>
+                <div class="sixth-section-image-content"><img src="images/walk.jpg" alt=""><p class="text-white-lighter">Walk where you can</p></div>
+                <div class="sixth-section-image-content"><img src="images/food.jpg" alt=""><p class="text-white-lighter">Eat nutritious food</p></div>
+                <div class="sixth-section-image-content"><img src="images/sleep.jpg" alt=""><p class="text-white-lighter">Get to bed on time</p></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-section">
+        <div class="footer-section-container">
+            <div class="footer-section-content display-flex">
+                <div class="footer-section-text1"><h1 class="brand"><i>Fitness</i></h1>
+                    <p class="text-white-lighter">Fitness can be described as a condition that helps us look, feel and do our best.  Physical fitness involves the performance of the heart and lungs, and the muscles of the body.</p></div>
+                <div class="footer-section-text2">
+                    <h2 class="text-white">Get Started</h2>
+                    <p>Service</p>
+                    <p>Contact Us</p>
+                    <p>Affiliate Program</p>
+                    <p>About Us</p>
+                </div>
+               
+                <div class="footer-section-text3">
+                    <h2 class="text-white">Get Started</h2>
+                    <p>Fitness</p>
+                    <p>Platform</p>
+                    <p>Workout Library</p>
+                    <p>App design</p>
+                </div>
+               
+            </div>
+            <div class="footer-section-content-text2">
+                <div id="horizontal-line"></div>
+                   <p class="text-white-lighter">All rights reserved @Fitness 2024</p>
             </div>
         </div>
-    </header>
+        
+
+    </footer>
+    
     
 </body>
 </html>
